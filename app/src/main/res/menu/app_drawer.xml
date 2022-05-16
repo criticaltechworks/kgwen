@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright 2022 Critical TechWorks, SA
+ SPDX-License-Identifier: Apache-2.0
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/messagesFragment"
+        android:icon="@drawable/ic_message"
+        android:title="@string/messages" />
+
+    <item
+        android:id="@+id/eventsFragment"
+        android:icon="@drawable/ic_event"
+        android:title="@string/events" />
+
+    <item
+        android:id="@+id/notificationsFragment"
+        android:icon="@drawable/ic_bell"
+        android:title="@string/notifications" />
+
+    <item
+        android:id="@+id/carpoolFragment"
+        android:icon="@drawable/ic_car"
+        android:title="@string/carpool" />
+
+    <item android:title="@string/account">
+
+        <menu>
+            <item
+                android:id="@+id/settings"
+                android:icon="@drawable/ic_settings"
+                android:title="@string/settings" />
+
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_login"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+
+</menu>

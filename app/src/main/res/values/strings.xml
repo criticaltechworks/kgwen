@@ -1,0 +1,78 @@
+<!--
+ Copyright 2022 Critical TechWorks, SA
+ SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="app_name">KGwen</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="conversation_title">{conversation_label}</string>
+    <string name="sample_message">Johnny Appleseed, was an American pioneer nurseryman who introduced apple trees to large parts of Pennsylvania, Ohio, Indiana, Illinois and Ontario, as well as the northern counties of present-day West Virginia. He became an American legend while still alive, due to his kind, generous ways, his leadership in conservation, and the symbolic importance he attributed to apples.</string>
+    <string name="sample_user">Johnny Appleseed</string>
+    <string name="empty_notifications"><![CDATA[Hurray!\nNo notifications!]]></string>
+    <string name="book_ride">Book ride</string>
+    <string name="login">Login</string>
+    <string name="password_hint">password</string>
+    <string name="e_mail_hint">e-mail</string>
+    <string name="login_subtitle">KGwen Demo</string>
+    <string name="login_title">Welcome</string>
+    <string name="brand_logo">Brand logo</string>
+    <string name="car_image">Car image</string>
+    <string name="title_hint">Title</string>
+    <string name="description_hint">Description</string>
+    <string name="tags">Tags</string>
+    <string name="title_placeholder">Some Long Title</string>
+    <string name="day_placeholder">12</string>
+    <string name="month_placeholder">Mar</string>
+    <string name="description_placeholder">Some interesting description</string>
+    <string name="add_event">Add event</string>
+    <string name="today">Today</string>
+    <string name="non_english_greeting">Guten Morgen</string>
+    <string name="greeting_meaning">Now you know how to say good morning in German</string>
+    <string name="new_notifications">6 new notifications</string>
+    <string name="new_meetings">3 meetings today</string>
+    <string name="generate_notification">Generate notification</string>
+    <string name="display_name_placeholder">Critical TechWorker</string>
+    <string name="email_placeholder">criticaltechworker@ctw.com</string>
+    <string name="unread_badge">Unread badge</string>
+    <string name="notification_icon">Notification icon</string>
+    <string name="mark_button">Mark read or unread button</string>
+    <string name="delete_notification">Delete notification</string>
+    <string name="master_mth">Master of making things happen</string>
+    <string name="notifications_title">Notifications</string>
+    <string name="trainings_title">Trainings</string>
+    <string name="jimos">Joy in Motion Operating System</string>
+    <string name="mandatory_trainings">1532 mandatory trainings due next week</string>
+    <string name="meetings_icon">Meetings icon</string>
+    <string name="trip_icon">Trip icon</string>
+    <string name="business_trips">1 business trip</string>
+    <string name="it_inspector">IT Inspector</string>
+    <string name="missed_calls_icon">Missed calls icon</string>
+    <string name="missed_calls">394 missed calls</string>
+    <string name="upcoming_events_icon">Upcoming events icon</string>
+    <string name="upcoming_events">1 meeting in 15 min</string>
+    <string name="mandatory_trainings_icon">Mandatory trainings icon</string>
+    <string name="security_trainings_icon">Security trainings icon</string>
+    <string name="security_trainings">3512 new security trainings available</string>
+    <string name="master_class_icon">Master class icon</string>
+    <string name="master_classes">1 Krystian Zimerman master class next month</string>
+    <string name="home">Home</string>
+    <string name="messages">Messages</string>
+    <string name="events">Events</string>
+    <string name="notifications">Notifications</string>
+    <string name="carpool">Carpool</string>
+    <string name="account">Account</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="compact_events_tab">Glance</string>
+    <string name="detailed_events_tab">Details</string>
+    <string name="logout_message">Are you sure you want to logout?</string>
+    <string name="conversation_description">Conversation with %1$s</string>
+    <string name="message_attachement">Add message attachment</string>
+    <string name="new_message">New message</string>
+    <string name="send_message">Send message</string>
+    <string name="mark_unread">Mark unread</string>
+    <string name="mark_read">Mark read</string>
+</resources>

@@ -1,0 +1,25 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven {
+            url "https://maven.pkg.jetbrains.space/kotlin/p/kotlin/dev/"
+        }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://androidx.dev/storage/compose-compiler/repository/" }
+        maven { url "https://maven.pkg.jetbrains.space/kotlin/p/kotlin/dev/" }
+        maven { url "https://s01.oss.sonatype.org/content/repositories/snapshots/" }
+    }
+}
+rootProject.name = "KGwen"
+include ':app'
+include ':library'
+include ':library:annotation'
+include ':library:processor'

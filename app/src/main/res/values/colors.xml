@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright 2022 Critical TechWorks, SA
+ SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <color name="primaryColor">#4dd0e1</color>
+    <color name="primaryLightColor">#88ffff</color>
+    <color name="primaryDarkColor">#009faf</color>
+    <color name="secondaryColor">#bbdefb</color>
+    <color name="secondaryLightColor">#eeffff</color>
+    <color name="secondaryDarkColor">#8aacc8</color>
+    <color name="primaryTextColor">#0F154D</color>
+    <color name="secondaryTextColor">#1a237e</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

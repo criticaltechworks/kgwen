@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright 2022 Critical TechWorks, SA
+ SPDX-License-Identifier: Apache-2.0
+-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/events_nav_graph"
+    app:startDestination="@id/compactEventsFragment">
+
+    <fragment
+        android:id="@+id/compactEventsFragment"
+        android:name="com.criticaltechworks.kgwen.demo.presentation.fragments.events.CompactEventsFragment"
+        android:label="fragment_compact_events"
+        tools:layout="@layout/fragment_compact_events" />
+    <fragment
+        android:id="@+id/detailedEventsFragment"
+        android:name="com.criticaltechworks.kgwen.demo.presentation.fragments.events.DetailedEventsFragment"
+        android:label="fragment_detailed_events"
+        tools:layout="@layout/fragment_detailed_events" />
+</navigation>

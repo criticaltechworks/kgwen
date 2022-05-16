@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright 2022 Critical TechWorks, SA
+ SPDX-License-Identifier: Apache-2.0
+-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.criticaltechworks.kgwen.demo.presentation.fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/messagesFragment"
+        android:name="com.criticaltechworks.kgwen.demo.presentation.fragments.message.MessagesFragment"
+        android:label="Messages"
+        tools:layout="@layout/fragment_messages">
+        <action
+            android:id="@+id/action_messagesFragment_to_conversationFragment"
+            app:destination="@id/conversationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventsFragment"
+        android:name="com.criticaltechworks.kgwen.demo.presentation.fragments.events.EventsFragment"
+        android:label="Events"
+        tools:layout="@layout/fragment_events" />
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.criticaltechworks.kgwen.demo.presentation.fragments.notifications.NotificationsFragment"
+        android:label="Notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/conversationFragment"
+        android:name="com.criticaltechworks.kgwen.demo.presentation.fragments.message.ConversationFragment"
+        android:label="@string/conversation_title"
+        tools:layout="@layout/fragment_conversation">
+        <argument
+            android:name="conversation_label"
+            android:defaultValue="Conversation"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/carpoolFragment"
+        android:name="com.criticaltechworks.kgwen.demo.presentation.fragments.carpool.CarpoolFragment"
+        android:label="Carpool"
+        tools:layout="@layout/fragment_carpool" />
+</navigation>

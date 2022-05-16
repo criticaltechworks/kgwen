@@ -1,0 +1,5 @@
+KGwen includes software developed at Critical TechWorks, SA.
+
+KGwen draws inspiration from GWEN, although it is now heavily modified from the
+original. GWEN source is at https://github.com/shazam/GWEN-Kotlin-Demo
+GWEN is Copyright 2019 Apple Inc. (SPDX-License-Identifier: Apache-2.0)

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright 2022 Critical TechWorks, SA
+ SPDX-License-Identifier: Apache-2.0
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/compactEventsFragment"
+        android:icon="@drawable/ic_grid"
+        android:title="@string/compact_events_tab" />
+
+    <item
+        android:id="@+id/detailedEventsFragment"
+        android:icon="@drawable/ic_list"
+        android:title="@string/detailed_events_tab" />
+
+</menu>
