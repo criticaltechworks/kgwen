@@ -1,5 +1,5 @@
 <p align="center">
-<img src="./doc/header.png" alt="KGwen" height="300"/>
+<img src="./doc/kgwen.png" alt="KGwen" height="300"/>
 </p>
 
 KGwen is a minimal, type-safe DSL that allows you to write readable acceptance tests directly in
