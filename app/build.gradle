@@ -112,7 +112,7 @@ dependencies {
         exclude group: 'org.jetbrains.kotlin'
     }
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
-    androidTestImplementation project(":library")
-    androidTestImplementation project(":library:annotation")
-    kaptAndroidTest project(':library:processor')
+
+    androidTestImplementation "com.criticaltechworks.kgwen:library:$kgwen_version"
+    kaptAndroidTest  "com.criticaltechworks.kgwen:processor:$kgwen_version"
 }
