@@ -114,5 +114,6 @@ dependencies {
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
 
     androidTestImplementation "com.criticaltechworks.kgwen:library:$kgwen_version"
+    androidTestImplementation "com.criticaltechworks.kgwen:annotation:$kgwen_version"
     kaptAndroidTest  "com.criticaltechworks.kgwen:processor:$kgwen_version"
 }

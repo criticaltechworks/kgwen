@@ -8,12 +8,18 @@ def group_id = 'com.criticaltechworks.kgwen'
 
 apply plugin: 'maven-publish'
 
+task sourceJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier "sources"
+}
+
 publishing {
     publications {
         bar(MavenPublication) {
             groupId group_id // Replace with group ID
             artifactId artifact_id
             version kgwen_version
+            artifact(sourceJar)
             artifact("$buildDir/outputs/aar/$artifact_id-release.aar")
         }
     }
@@ -57,13 +63,10 @@ android {
         jvmTarget = jvm_target
     }
 
-    task androidSourcesJar(type: Jar) {
-        classifier = 'sources'
-        from android.sourceSets.main.java.srcDirs
-    }
-
-    artifacts {
-        archives androidSourcesJar
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+        }
     }
 }
 
@@ -76,7 +79,7 @@ tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
 }
 
 dependencies {
-    implementation "com.criticaltechworks.kgwen:annotation$kgwen_version"
+    implementation "com.criticaltechworks.kgwen:annotation:$kgwen_version"
 
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version")
     runtimeOnly("org.jetbrains.kotlin:kotlin-reflect:$kotlin_version")

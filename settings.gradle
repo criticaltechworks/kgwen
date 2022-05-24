@@ -28,5 +28,5 @@ dependencyResolutionManagement {
 rootProject.name = "KGwen"
 include ':app'
 include ':library'
-include ':library:annotation'
 include ':processor'
+include ':annotation'
