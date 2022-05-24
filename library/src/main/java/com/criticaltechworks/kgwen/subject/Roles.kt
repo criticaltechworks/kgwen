@@ -6,8 +6,8 @@ package com.criticaltechworks.kgwen.subject
 
 import com.criticaltechworks.kgwen.*
 
-/**.
- * The role of a [TestSubject] responsible for scenario arrangement
+/**
+ * The role of a [TestSubject] responsible for scenario arrangement.
  */
 @KGwenDsl
 interface ArrangerRole<T>: TestSubject where T : ArrangerRole<T>
