@@ -13,7 +13,7 @@ import com.criticaltechworks.kgwen.*
 interface ArrangerRole<T>: TestSubject where T : ArrangerRole<T>
 
 /**
- * The role of a [TestSubject] responsible taking the actions prescribed by the behaviour spec.
+ * The role of a [TestSubject] responsible for taking the actions prescribed by the behaviour spec.
  */
 @KGwenDsl
 interface ActorRole<T>: TestSubject where T : ActorRole<T>
