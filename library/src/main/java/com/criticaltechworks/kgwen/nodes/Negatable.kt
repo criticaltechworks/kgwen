@@ -7,7 +7,7 @@ package com.criticaltechworks.kgwen.nodes
 import com.criticaltechworks.kgwen.subject.AsserterRole
 import junit.framework.AssertionFailedError
 
-// TODO: upadate doc
+// TODO: update doc
 /**
  * Node transformation that creates an assertion which is the logical negation of another.
  */
