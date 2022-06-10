@@ -79,11 +79,11 @@ tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
 }
 
 dependencies {
-    if (!System.env.JITPACK) {
-        implementation "com.criticaltechworks.kgwen:annotation:$kgwen_version"
-    } else {
-        implementation project(":annotation")
-    }
+//    if (!System.env.JITPACK) {
+//        implementation "com.criticaltechworks.kgwen:annotation:$kgwen_version"
+//    } else {
+//        implementation project(":annotation")
+//    }
 
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version")
     runtimeOnly("org.jetbrains.kotlin:kotlin-reflect:$kotlin_version")
