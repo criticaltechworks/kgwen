@@ -27,7 +27,9 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "KGwen"
-include ':app'
 include ':library'
 include ':processor'
 include ':annotation'
+if (!System.env.JITPACK) {
+    include ':app'
+}

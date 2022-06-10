@@ -45,8 +45,12 @@ dependencies {
 
     //noinspection AnnotationProcessorOnCompilePath
     implementation 'com.google.auto.service:auto-service:1.0.1'
-    //implementation "com.criticaltechworks.kgwen:annotation:$kgwen_version"
-    implementation project(":annotation") // For JitPack
+
+    if (!System.env.JITPACK) {
+        implementation "com.criticaltechworks.kgwen:annotation:$kgwen_version"
+    } else {
+        implementation project(":annotation") // For JitPack
+    }
 
     kapt 'com.google.auto.service:auto-service:1.0.1'
 }
