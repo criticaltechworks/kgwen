@@ -17,7 +17,7 @@ apply plugin: 'maven-publish'
 publishing {
     publications {
         bar(MavenPublication) {
-            groupId group_id // Replace with group ID
+            groupId group_id
             artifactId artifact_id
             version kgwen_version
             from(components.java)
@@ -38,6 +38,4 @@ publishing {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 }
