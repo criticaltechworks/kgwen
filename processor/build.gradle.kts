@@ -2,6 +2,7 @@ plugins {
     id("java-library")
     id("kotlin")
     id("kotlin-kapt")
+    id("maven-publish")
 }
 
 //def artifact_id = 'processor'
@@ -34,6 +35,18 @@ plugins {
 java {
     sourceCompatibility = JavaVersion.VERSION_11
     targetCompatibility = JavaVersion.VERSION_11
+    withSourcesJar()
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("KgwenPublication") {
+            val kgwenGroupId: String by project
+            groupId = kgwenGroupId
+            artifactId = "kgwen"
+            from(components.findByName("java"))
+        }
+    }
 }
 
 dependencies {

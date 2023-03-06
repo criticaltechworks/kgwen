@@ -120,7 +120,11 @@ dependencies {
     }
     androidTestImplementation("androidx.compose.ui:ui-test-junit4:$composeVersion")
 
-    androidTestImplementation("com.criticaltechworks.kgwen:library:$kgwenVersion")
-    androidTestImplementation("com.criticaltechworks.kgwen:annotation:$kgwenVersion")
-    kaptAndroidTest("com.criticaltechworks.kgwen:processor:$kgwenVersion")
+    androidTestImplementation("ccom.criticaltechworks.kgwen:library:feature~ksp-SNAPSHOT")
+    androidTestImplementation("com.criticaltechworks.kgwen:annotation:feature~ksp-SNAPSHOT")
+    kaptAndroidTest("com.criticaltechworks.kgwen:processor:feature~ksp-SNAPSHOT")
+
+//    androidTestImplementation("com.criticaltechworks.kgwen:library:$kgwenVersion")
+//    androidTestImplementation("com.criticaltechworks.kgwen:annotation:$kgwenVersion")
+//    kaptAndroidTest("com.criticaltechworks.kgwen:processor:$kgwenVersion")
 }

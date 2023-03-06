@@ -22,37 +22,6 @@ val composeCompilerVersion: String by project
 val composeVersion: String by project
 val navVersion: String by project
 
-publishing {
-    publications {
-        create<MavenPublication>("KgwenPublication") {
-            groupId = kgwenGroupId
-            artifactId = "library"
-            artifact("$buildDir/outputs/aar/$artifactId-release.aar")
-            artifact(tasks.findByName("sourcesJar"))
-        }
-    }
-
-//    publications {
-//        bar(MavenPublication) {
-//            groupId group_id // Replace with group ID
-//            artifactId artifact_id
-//            version kgwen_version
-//            artifact(sourceJar)
-//            artifact("$buildDir/outputs/aar/$artifact_id-release.aar")
-//        }
-//    }
-//    repositories {
-//        maven {
-//            name = "GitHubPackages"
-//            url = uri("https://maven.pkg.github.com/criticaltechworks/kgwen")
-//            credentials {
-//                username = System.getenv("GPR_USER")
-//                password = System.getenv("GPR_API_KEY")
-//            }
-//        }
-//    }
-}
-
 android {
     namespace = kgwenGroupId
 
@@ -82,11 +51,23 @@ android {
         jvmTarget = kgewnJvmTarget
     }
 
-//    publishing {
-//        singleVariant("release") {
-//            withSourcesJar()
-//        }
-//    }
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("KgwenPublication") {
+            val kgwenGroupId: String by project
+            groupId = kgwenGroupId
+            artifactId = "kgwen"
+            from(components.findByName("java"))
+        }
+    }
 }
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().all {
