@@ -65,7 +65,8 @@ publishing {
             val kgwenGroupId: String by project
             groupId = kgwenGroupId
             artifactId = project.name
-            from(components.findByName("java"))
+            artifact("$buildDir/outputs/aar/${artifactId}-release.aar")
+            artifact(tasks.getByName("sourcesJar"))
         }
     }
 }
