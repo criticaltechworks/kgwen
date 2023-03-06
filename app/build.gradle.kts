@@ -120,7 +120,7 @@ dependencies {
     }
     androidTestImplementation("androidx.compose.ui:ui-test-junit4:$composeVersion")
 
-    androidTestImplementation("com.github.criticaltechworks.kgwen:library:feature~ksp-SNAPSHOT")
+    androidTestImplementation("com.github.criticaltechworks:kgwen:feature~ksp-SNAPSHOT")
     androidTestImplementation("com.github.criticaltechworks.kgwen:annotation:feature~ksp-SNAPSHOT")
     kaptAndroidTest("com.github.criticaltechworks.kgwen:processor:feature~ksp-SNAPSHOT")
 }
