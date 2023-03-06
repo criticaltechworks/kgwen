@@ -50,23 +50,18 @@ android {
     kotlinOptions {
         jvmTarget = kgewnJvmTarget
     }
-
-    publishing {
-        singleVariant("release") {
-            withSourcesJar()
-            withJavadocJar()
-        }
-    }
 }
 
-publishing {
-    publications {
-        create<MavenPublication>("LibraryPublication") {
-            val kgwenGroupId: String by project
-            groupId = kgwenGroupId
-            artifactId = project.name
-            artifact("$buildDir/outputs/aar/${artifactId}-release.aar")
-            artifact(tasks.getByName("sourcesJar"))
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("LibraryPublication") {
+                val kgwenGroupId: String by project
+                groupId = kgwenGroupId
+                artifactId = project.name
+                artifact(tasks.getByName("bundleReleaseAar"))
+                artifact(tasks.getByName("sourcesJar"))
+            }
         }
     }
 }
