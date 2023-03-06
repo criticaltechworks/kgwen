@@ -12,10 +12,10 @@ java {
 
 publishing {
     publications {
-        create<MavenPublication>("KgwenPublication") {
+        create<MavenPublication>("AnnotationPublication") {
             val kgwenGroupId: String by project
             groupId = kgwenGroupId
-            artifactId = "kgwen"
+            artifactId = project.name
             from(components.findByName("java"))
         }
     }

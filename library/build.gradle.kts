@@ -61,10 +61,10 @@ android {
 
 publishing {
     publications {
-        create<MavenPublication>("KgwenPublication") {
+        create<MavenPublication>("LibraryPublication") {
             val kgwenGroupId: String by project
             groupId = kgwenGroupId
-            artifactId = "kgwen"
+            artifactId = project.name
             from(components.findByName("java"))
         }
     }
