@@ -52,14 +52,15 @@ android {
     }
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            create<MavenPublication>("LibraryPublication") {
-                val kgwenGroupId: String by project
-                groupId = kgwenGroupId
-                artifactId = "library"
-                artifact(tasks.getByName("bundleReleaseAar"))
+publishing {
+    publications {
+        create<MavenPublication>("LibraryPublication") {
+            val kgwenGroupId: String by project
+            groupId = kgwenGroupId
+            artifactId = project.name
+
+            afterEvaluate {
+                from(components["release"])
                 artifact(tasks.getByName("sourcesJar"))
             }
         }
@@ -68,7 +69,7 @@ afterEvaluate {
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().all {
     kotlinOptions {
-        freeCompilerArgs = listOf("-opt-in=kotlin.RequiresOptIn",)
+        freeCompilerArgs = listOf("-opt-in=kotlin.RequiresOptIn")
     }
 }
 
