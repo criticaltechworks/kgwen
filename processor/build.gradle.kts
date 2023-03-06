@@ -38,13 +38,12 @@ java {
 
 dependencies {
 //    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation(project(":annotation"))
 
     implementation("com.squareup:kotlinpoet:1.12.0-SNAPSHOT")
 
     //noinspection AnnotationProcessorOnCompilePath
     implementation("com.google.auto.service:auto-service:1.0.1")
-    val kgwenVersion: String by project
-    implementation("com.criticaltechworks.kgwen:annotation:$kgwenVersion")
 
     kapt("com.google.auto.service:auto-service:1.0.1")
 }

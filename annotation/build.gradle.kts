@@ -6,7 +6,7 @@ plugins {
 java {
     sourceCompatibility = JavaVersion.VERSION_11
     targetCompatibility = JavaVersion.VERSION_11
-    withSourcesJar()
+//    withSourcesJar()
 }
 
 //val artifactId = "annotation"
