@@ -58,7 +58,7 @@ afterEvaluate {
             create<MavenPublication>("LibraryPublication") {
                 val kgwenGroupId: String by project
                 groupId = kgwenGroupId
-                artifactId = project.name
+                artifactId = "library"
                 artifact(tasks.getByName("bundleReleaseAar"))
                 artifact(tasks.getByName("sourcesJar"))
             }
